@@ -1,9 +1,17 @@
-import styles from "Answer.module.css";
+import styles from "./Answer.module.css";
 
-export default function Answer() {
+interface AnswerProps {
+  answer: string;
+  points: number;
+}
+
+function Answer({answer, points}: AnswerProps) {
   return (
     <>
-      <p>Answer</p>
+      <p className={styles.wrapper}>{answer}</p>
+      <p className={styles.wrapper}>{points}</p>
     </>
   );
 }
+
+export default Answer;
