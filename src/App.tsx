@@ -1,11 +1,19 @@
-import "./App.css";
+import './App.css'
+import Answer from './components/Answer'
 
 function App() {
   return (
     <>
-      <p>Hello world</p>
+      <Answer/>
+      <Answer/>
+      <Answer/>
+      <Answer/>
+      <Answer/>
+      <Answer/>
+      <Answer/>
+      <Answer/>
     </>
-  );
+  )
 }
 
 export default App
