@@ -7,10 +7,10 @@ interface AnswerProps {
 
 function Answer({answer, points}: AnswerProps) {
   return (
-    <>
-      <p className={styles.wrapper}>{answer}</p>
-      <p className={styles.wrapper}>{points}</p>
-    </>
+    <div className={styles.wrapper}>
+      <span>{answer}</span>
+      <span>{points}</span>
+    </div>
   );
 }
 

@@ -1,3 +1,8 @@
 .wrapper {
-    background-color: aliceblue;
+    color: white;
+    background-color: blue;
+    border: 4px solid gold;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
