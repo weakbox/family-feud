@@ -1,4 +1,5 @@
 .wrapper {
+    cursor: pointer;
     color: white;
     background-color: blue;
     border: 4px solid gold;
