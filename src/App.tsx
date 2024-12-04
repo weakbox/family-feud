@@ -4,14 +4,14 @@ import Answer from './components/Answer'
 function App() {
   return (
     <>
-      <Answer answer="Test Answer 1" points={76}/>
-      <Answer answer="Test Answer 2" points={76}/>
-      <Answer answer="Test Answer 3" points={76}/>
-      <Answer answer="Test Answer 4" points={76}/>
-      <Answer answer="Test Answer 5" points={76}/>
-      <Answer answer="Test Answer 6" points={76}/>
-      <Answer answer="Test Answer 7" points={76}/>
-      <Answer answer="Test Answer 8" points={76}/>
+      <p>Real Or Fictional, Name A Famous Man With Long Hair</p>
+      <Answer answer="Jesus" points={41}/>
+      <Answer answer="Fabio" points={15}/>
+      <Answer answer="Samson" points={11}/>
+      <Answer answer="Howard Stern" points={8}/>
+      <Answer answer="George Washington" points={7}/>
+      <Answer answer="Hercules" points={7}/>
+      <Answer answer="Albert Einstein" points={7}/>
     </>
   )
 }
