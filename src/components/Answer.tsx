@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./Answer.module.css";
 import bell from "../assets/sounds/bell.mp3";
 
@@ -11,8 +11,13 @@ function Answer({answer, points}: AnswerProps) {
   const [flipped, setFlipped] = useState(false);
   const audioRef = useRef(new Audio(bell));
 
+  // Play correct sound when answer is flipped ie: when state changes
+  useEffect(() => {
+    if (flipped) playCorrect();
+    console.log(`State of answer "${answer}" changed. Now: ${flipped}`);
+  }, [flipped]);
+
   function handleClick() {
-    if (!flipped) playCorrect();
     setFlipped((prev) => !prev);
   }
 
