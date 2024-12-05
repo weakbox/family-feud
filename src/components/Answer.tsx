@@ -32,7 +32,10 @@ function Answer({answer, points}: AnswerProps) {
     <div className={styles.wrapper} onClick={handleClick}>
       <div className={`${styles.innerWrapper} ${flipped && styles.flipped}`}>
         <div className={styles.front}>{"Click to Reveal"}</div>
-        <div className={styles.back}>{answer} {points}</div>
+        <div className={styles.back}>
+          <p className={styles.text}>{answer.toUpperCase()}</p>
+          <p className={styles.points}>{points}</p>
+        </div>
       </div>
     </div>
   );
