@@ -5,9 +5,9 @@ import bell from "../assets/sounds/bell.mp3";
 interface AnswerProps {
   answer: string;
   points: number;
-}
+};
 
-function Answer({answer, points}: AnswerProps) {
+function Answer({ answer, points }: AnswerProps) {
   const [flipped, setFlipped] = useState(false);
   const audioRef = useRef(new Audio(bell));
 
