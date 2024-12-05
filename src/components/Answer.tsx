@@ -29,9 +29,11 @@ function Answer({answer, points}: AnswerProps) {
   }
 
   return (
-    <div className={`${styles.wrapper} ${flipped ? styles.flipped : ""}`} onClick={handleClick}>
-      <span>{flipped ? answer : "Click to Reveal"}</span>
-      {flipped && <span>{points}</span>}
+    <div className={styles.wrapper} onClick={handleClick}>
+      <div className={`${styles.innerWrapper} ${flipped && styles.flipped}`}>
+        <div className={styles.front}>{"Click to Reveal"}</div>
+        <div className={styles.back}>{answer} {points}</div>
+      </div>
     </div>
   );
 }
