@@ -2,8 +2,8 @@
 
 .wrapper {
   background-color: transparent;
-  width: 350px;
-  height: 100px;
+  width: 20rem;
+  height: 5rem;
   perspective: 1000px;
   color: white;
   cursor: pointer;
