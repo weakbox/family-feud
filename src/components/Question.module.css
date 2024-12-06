@@ -13,6 +13,7 @@
 }
 
 .points {
+  color: white;
   font-size: 2em;
   background-color: blue;
   padding: 0.5rem;
