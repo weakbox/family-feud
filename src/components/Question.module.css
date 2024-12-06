@@ -6,10 +6,18 @@
   align-items: center;
   padding: 1rem;
   gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 3px solid darkblue;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .question {
-  color: black;
+  color: white;
+  font-size: 2em;
 }
 
 .points {
@@ -17,4 +25,6 @@
   font-size: 2em;
   background-color: blue;
   padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 3px solid darkblue;
 }

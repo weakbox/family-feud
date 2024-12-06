@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import styles from "./Answer.module.css";
 import bell from "../assets/sounds/bell.mp3";
+import { Textfit } from "@ataverascrespo/react18-ts-textfit";
 
 interface AnswerProps {
   answer: string;
@@ -30,7 +31,12 @@ function Answer({answer, points, flipped, onFlip}: AnswerProps) {
       <div className={`${styles.innerWrapper} ${flipped && styles.flipped}`}>
         <div className={styles.front}>{"Click to Reveal"}</div>
         <div className={styles.back}>
-          <p className={styles.text}>{answer.toUpperCase()}</p>
+          <Textfit 
+            className={styles.text}
+            mode="single"
+            forceSingleModeWidth={false}>
+            {answer.toUpperCase()}
+          </Textfit>
           <p className={styles.points}>{points}</p>
         </div>
       </div>

@@ -1,12 +1,15 @@
-/* 3D card effect inspired by: https://www.w3schools.com/howto/howto_css_flip_card.asp */
-
 .wrapper {
   background-color: transparent;
   width: 20rem;
-  height: 5rem;
+  height: 4rem;
   perspective: 1000px;
   color: white;
   cursor: pointer;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .innerWrapper {
@@ -27,6 +30,9 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  border: 3px solid darkblue;
 }
 
 .front {
@@ -42,14 +48,20 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
-  padding: 1rem;
+}
 
-  .text {
-    width: 80%;
-  }
+.text {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  align-content: center;
+}
 
-  .points {
-    width: 20%;
-  }
+.points {
+  background-color: blue;
+  width: 20%;
+  height: 100%;
+  align-content: center;
+  font-size: 2em;
+  border-left: 3px solid darkblue;
 }
