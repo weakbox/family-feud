@@ -10,7 +10,7 @@ interface AnswerProps {
   onFlip: () => void;
 };
 
-function Answer({answer, points, flipped, onFlip}: AnswerProps) {
+export function Answer({answer, points, flipped, onFlip}: AnswerProps) {
   const audioRef = useRef(new Audio(bell));
 
   // Play correct sound when answer is flipped ie: when state changes
@@ -44,4 +44,12 @@ function Answer({answer, points, flipped, onFlip}: AnswerProps) {
   );
 }
 
-export default Answer;
+export function AnswerBlank() {
+  return (
+    <div className={`${styles.wrapper} ${styles.dummy}`}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.front}></div>
+      </div>
+    </div>
+  );
+}

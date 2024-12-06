@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CountUp from "react-countup";
-import Answer from "./Answer";
+import { Answer, AnswerBlank } from "./Answer";
 import styles from "./Question.module.css";
 
 interface Question {
@@ -30,23 +30,35 @@ function Question({question}: QuestionProps) {
     flipState ? sum + question.answers[index].points : sum
   ), 0);
 
+  function renderAnswers() {
+    return (
+      <div className={styles.answersWrapper}>
+        {question.answers.map((answer, index) => (
+          <Answer 
+            key={index}
+            answer={answer.text} 
+            points={answer.points}
+            flipped={flipStates[index] as boolean}
+            onFlip={() => handleFlip(index)}
+          />
+        ))}
+        {Array.from({length: (8 - question.answers.length)}).map((_, index) => (
+          <AnswerBlank key={index}/>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.question}>{question.text}</h2>
       <CountUp
         className={styles.points}
+        duration={1}
         end={totalPoints}
         preserveValue={true}
       />
-      {question.answers.map((answer, index) => (
-        <Answer 
-          key={index}
-          answer={answer.text} 
-          points={answer.points}
-          flipped={flipStates[index] as boolean}
-          onFlip={() => handleFlip(index)}
-        />
-      ))}
+      {renderAnswers()}
     </div>
   );
 }
