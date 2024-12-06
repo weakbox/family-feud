@@ -1,7 +1,7 @@
 import "./App.css";
 import Question from "./components/Question";
 
-const exampleQuestion = {
+const question = {
   text: "Real Or Fictional, Name A Famous Man With Long Hair",
   answers: [
     { text: "Jesus", points: 41 },
@@ -17,7 +17,7 @@ const exampleQuestion = {
 function App() {
   return (
     <>
-      <Question question={exampleQuestion}/>
+      <Question question={question}/>
     </>
   );
 }
