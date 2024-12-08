@@ -34,7 +34,8 @@ export function Answer({answer, points, flipped, onFlip}: AnswerProps) {
           <Textfit 
             className={styles.text}
             mode="single"
-            forceSingleModeWidth={false}>
+            forceSingleModeWidth={false}
+            throttle={1000}>
             {answer.toUpperCase()}
           </Textfit>
           <p className={styles.points}>{points}</p>
