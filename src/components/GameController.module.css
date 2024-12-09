@@ -1,0 +1,9 @@
+.answersWrapper {
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  border: 6px solid gold;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}

@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: lightskyblue;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,27 +7,15 @@
   padding: 1rem;
   gap: 0.5rem;
   border-radius: 0.25rem;
-  border: 3px solid darkblue;
-
+  
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
-.answersWrapper {
-  display: grid;
-  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
-  grid-auto-flow: column;
-  gap: 0.5rem;
-  border: 6px solid gold;
-  border-radius: 0.75rem;
-  padding: 0.5rem;
-}
-
-
 .question {
-  color: white;
+  color: red;
   font-size: 2em;
 }
 
