@@ -1,7 +1,13 @@
 .wrapper {
+  width: 100vw;
   background-color: skyblue;
-  text-align: center;
   padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .answersWrapper {
@@ -10,4 +16,5 @@
   grid-auto-flow: column;
   gap: 0.5rem;
   justify-items: center;
+  width: fit-content;
 }

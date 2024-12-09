@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -14,9 +15,16 @@
 .question {
   color: white;
   font-size: 2em;
+  background-color: dodgerblue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 3px solid darkblue;
 }
 
 .points {
+  text-align: center;
+  width: 5rem;
+  height: 4rem;
   color: white;
   font-size: 2em;
   background-color: blue;
