@@ -168,8 +168,11 @@ function GameController() {
     );
   }
 
+  // async here is causing flipstates to be initialized with wrong question length
   function handleClick() {
-    setQuestion(getRandomQuestion());
+    const newQuestion = getRandomQuestion();
+    setQuestion(newQuestion);
+    setFlipStates(Array.from({length: newQuestion.answers.length}).fill(false));
   }
   
   function getRandomQuestion() {
@@ -178,11 +181,11 @@ function GameController() {
   }
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <Question questionText={question.text} totalPoints={totalPoints}/>
       {renderAnswers()}
       <button onClick={handleClick}>Change the Question</button>
-    </>
+    </div>
   );
 }
 
