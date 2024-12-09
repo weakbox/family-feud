@@ -15,20 +15,21 @@
 .question {
   color: white;
   font-size: 2em;
-  background-color: dodgerblue;
+  background-color: #0174BE;
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  border: 3px solid darkblue;
+  border-radius: 0.5rem;
+  border: 4px solid white;
 }
 
 .points {
   text-align: center;
-  width: 5rem;
-  height: 4rem;
+  align-content: center;
+  width: 12rem;
+  height: 10rem;
   color: white;
-  font-size: 2em;
-  background-color: blue;
+  font-size: 5em;
+  background-color: #0174BE;
   padding: 0.5rem;
-  border-radius: 0.25rem;
-  border: 3px solid darkblue;
+  border-radius: 1rem;
+  border: 4px solid white;
 }

@@ -1,6 +1,9 @@
 .wrapper {
   width: 100vw;
-  background-color: skyblue;
+  background-color: #0C356A;
+  background-image:  radial-gradient(#0d3e7d 3px, transparent 0.5px), radial-gradient(#0d3e7d 3px, #0C356A 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
   padding: 1rem;
 
   display: flex;
@@ -14,7 +17,11 @@
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   grid-auto-flow: column;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-items: center;
   width: fit-content;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 8px solid #FFC436;
 }

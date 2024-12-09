@@ -16,7 +16,7 @@ export function Answer({answer, points, flipped, onFlip}: AnswerProps) {
   // Play correct sound when answer is flipped ie: when state changes
   useEffect(() => {
     if (flipped) playCorrect();
-    console.log(`State of answer "${answer}" changed. Now: ${flipped}`);
+    // console.log(`State of answer "${answer}" changed. Now: ${flipped}`);
   }, [flipped]);
 
   function playCorrect() {

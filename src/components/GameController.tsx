@@ -130,9 +130,6 @@ const testQuestions = [
   },
 ];
 
-// Have to reset game state when question is changed...
-// Essentially just flip all the tiles.
-
 function GameController() {
   const [question, setQuestion] = useState(getRandomQuestion());
   const [flipStates, setFlipStates] = useState(Array.from({length: question.answers.length}).fill(false));
@@ -168,15 +165,16 @@ function GameController() {
     );
   }
 
-  // async here is causing flipstates to be initialized with wrong question length
   function handleClick() {
+    // Currently problem where answers are shown for a split second before flipping back over
     const newQuestion = getRandomQuestion();
+    console.log(newQuestion);
     setQuestion(newQuestion);
     setFlipStates(Array.from({length: newQuestion.answers.length}).fill(false));
   }
   
   function getRandomQuestion() {
-    let i = Math.floor(Math.random() * testQuestions.length);
+    const i = Math.floor(Math.random() * testQuestions.length);
     return testQuestions[i];
   }
 
