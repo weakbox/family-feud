@@ -11,6 +11,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --pri-text-color: #F9F9F9;
+  --pri-text-color-dark: #1A1A1A;
+  --pri-background-color: #F9F9F9;
+  --sec-background-color: dodgerblue;
+  --ter-background-color: #1A1A1A;
+  --pri-accent-color: dodgerblue;
+  --sec-accent-color: #1E43FF;
+  --border-radius: 0.25rem;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
 }
 
 * {

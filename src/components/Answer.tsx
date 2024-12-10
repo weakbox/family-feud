@@ -4,13 +4,14 @@ import bell from "../assets/sounds/bell.mp3";
 import { Textfit } from "@ataverascrespo/react18-ts-textfit";
 
 interface AnswerProps {
+  index: number;
   answer: string;
   points: number;
   flipped: boolean;
   onFlip: () => void;
 };
 
-export function Answer({answer, points, flipped, onFlip}: AnswerProps) {
+export function Answer({index, answer, points, flipped, onFlip}: AnswerProps) {
   const audioRef = useRef(new Audio(bell));
 
   // Play correct sound when answer is flipped ie: when state changes
@@ -29,11 +30,13 @@ export function Answer({answer, points, flipped, onFlip}: AnswerProps) {
   return (
     <div className={styles.wrapper} onClick={onFlip}>
       <div className={`${styles.innerWrapper} ${flipped && styles.flipped}`}>
-        <div className={styles.front}>{"Click to Reveal"}</div>
+        <div className={styles.front}>
+          <div className={styles.square}>{index + 1}</div>
+        </div>
         <div className={styles.back}>
           <Textfit 
             className={styles.text}
-            mode="single"
+            max={36}
             forceSingleModeWidth={false}
             throttle={1000}>
             {answer.toUpperCase()}

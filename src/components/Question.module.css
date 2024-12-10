@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  
+  gap: 3rem;
+
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -13,23 +13,23 @@
 }
 
 .question {
-  color: white;
-  font-size: 2em;
-  background-color: #0174BE;
+  color: var(--pri-text-color);
+  font-size: 36px;
+  background-color: var(--sec-background-color);
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: 4px solid white;
+  text-align: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .points {
   text-align: center;
   align-content: center;
-  width: 12rem;
-  height: 10rem;
-  color: white;
-  font-size: 5em;
-  background-color: #0174BE;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  border: 4px solid white;
+  width: 10rem;
+  height: 8rem;
+  color: var(--pri-text-color);
+  font-size: 72px;
+  background-color: var(--sec-background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }

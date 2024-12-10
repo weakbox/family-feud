@@ -152,6 +152,7 @@ function GameController() {
         {question.answers.map((answer, index) => (
           <Answer 
             key={index}
+            index={index}
             answer={answer.text} 
             points={answer.points}
             flipped={flipStates[index] as boolean}
