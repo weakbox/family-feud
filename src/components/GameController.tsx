@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Question from "./Question";
 import { Answer, AnswerBlank } from "./Answer";
+import Points from "./Points";
 import styles from "./GameController.module.css";
 
 interface Question {
@@ -182,7 +183,11 @@ function GameController() {
   return (
     <div className={styles.wrapper}>
       <Question questionText={question.text} totalPoints={totalPoints}/>
-      {renderAnswers()}
+      <div className={styles.pointsWrapper}>
+        <Points totalPoints={50}/>
+        {renderAnswers()}
+        <Points totalPoints={23}/>
+      </div>
       <button onClick={handleClick}>Change the Question</button>
     </div>
   );

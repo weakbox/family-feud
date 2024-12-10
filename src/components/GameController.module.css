@@ -1,7 +1,7 @@
 .wrapper {
   width: 100vw;
   padding: 8rem;
-  background-image: url("./blob.svg");
+  background-image: url("blob.svg");
   background-size: contain;
   background-position: center;
   background-origin: border-box;
@@ -23,4 +23,12 @@
   background-color: var(--pri-text-color-dark);
   padding: 1rem;
   border-radius: var(--border-radius);
+}
+
+.pointsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }

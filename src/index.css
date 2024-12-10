@@ -20,7 +20,7 @@
   --pri-accent-color: dodgerblue;
   --sec-accent-color: #1E43FF;
   --border-radius: 0.25rem;
-  --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  --box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px inset;
 }
 
 * {
