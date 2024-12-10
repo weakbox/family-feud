@@ -134,7 +134,8 @@ const testQuestions = [
 function GameController() {
   const [question, setQuestion] = useState(getRandomQuestion());
   const [flipStates, setFlipStates] = useState(Array.from({length: question.answers.length}).fill(false));
-  
+  const [scores, setScores] = useState([0, 0]);
+
   // Runs when answer is clicked
   function handleFlip(index: number) {
     setFlipStates((prev) => (
@@ -167,7 +168,7 @@ function GameController() {
     );
   }
 
-  function handleClick() {
+  function handleNewQuestion() {
     // Currently problem where answers are shown for a split second before flipping back over
     const newQuestion = getRandomQuestion();
     console.log(newQuestion);
@@ -180,17 +181,73 @@ function GameController() {
     return testQuestions[i];
   }
 
+  function handleAddPoints(team: 0 | 1, multiplier: number) {
+    setScores((prev) =>
+      prev.map((score, i) => (i === team ? score + totalPoints * multiplier : score))
+    );
+  }
+  
   return (
     <div className={styles.wrapper}>
-      <Question questionText={question.text} totalPoints={totalPoints}/>
+      <Question questionText={question.text} totalPoints={totalPoints} />
       <div className={styles.pointsWrapper}>
-        <Points totalPoints={50}/>
+        <Points totalPoints={scores[0]} />
         {renderAnswers()}
-        <Points totalPoints={23}/>
+        <Points totalPoints={scores[1]} />
       </div>
-      <button onClick={handleClick}>Change the Question</button>
+      <div className={styles.buttonWrapper}>
+        <div
+          className={styles.button}
+          onClick={() => handleAddPoints(0, 3)}
+          role="button"
+        >
+          Add x3
+        </div>
+        <div
+          className={styles.button}
+          onClick={() => handleAddPoints(0, 2)}
+          role="button"
+        >
+          Add x2
+        </div>
+        <div
+          className={styles.button}
+          onClick={() => handleAddPoints(0, 1)}
+          role="button"
+        >
+          Add x1
+        </div>
+        <div
+          className={styles.button}
+          onClick={handleNewQuestion}
+          role="button"
+        >
+          New Question
+        </div>
+        <div
+          className={styles.button}
+          onClick={() => handleAddPoints(1, 1)}
+          role="button"
+        >
+          Add x1
+        </div>
+        <div
+          className={styles.button}
+          onClick={() => handleAddPoints(1, 2)}
+          role="button"
+        >
+          Add x2
+        </div>
+        <div
+          className={styles.button}
+          onClick={() => handleAddPoints(1, 3)}
+          role="button"
+        >
+          Add x3
+        </div>
+      </div>
     </div>
-  );
+  );  
 }
 
 export default GameController;

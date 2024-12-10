@@ -32,3 +32,20 @@
   align-items: center;
   gap: 3rem;
 }
+
+.buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .button {
+    padding: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: var(--pri-text-color);
+    cursor: pointer;
+    background-color: var(--sec-background-color);
+  }
+}
