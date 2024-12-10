@@ -14,121 +14,110 @@ interface Question {
 
 const testQuestions = [
   {
-    text: "Name Something You Would Allow The House Sitter To Use While At Your Place",
-    answers: [
-      { text: "Phone", points: 40 },
-      { text: "TV", points: 35 },
-      { text: "Bathroom", points: 12 },
-      { text: "Computer", points: 8 },
-      { text: "Washing/Drying Machine", points: 3 },
-    ],
+    "text": "Name A Character Who’s Known For Almost Ruining Christmas.",
+    "answers": [
+      { "text": "Grinch", "points": 67 },
+      { "text": "Ebenezer Scrooge", "points": 28 },
+      { "text": "Charlie Brown", "points": 4 }
+    ]
   },
   {
-    text: "Name A Prop Used By Tap Dancers",
-    answers: [
-      { text: "Cane", points: 65 },
-      { text: "Top Hat", points: 28 },
-      { text: "Baton", points: 7 },
-    ],
+    "text": "What’s The Messiest Thing To Clean Up After The Christmas Holiday?",
+    "answers": [
+      { "text": "Kitchen", "points": 48 },
+      { "text": "Tree", "points": 27 },
+      { "text": "Wrapping Paper", "points": 15 },
+      { "text": "Decorations", "points": 5 }
+    ]
   },
   {
-    text: "If You Drew Homer Simpson’s Name In A Secret Santa Exchange, What Would You Buy Him?",
-    answers: [
-      { text: "Beer", points: 67 },
-      { text: "Donuts", points: 24 },
-      { text: "Bowling Ball", points: 9 },
-    ],
+    "text": "What Complaints Do People Make About The Christmas Holiday?",
+    "answers": [
+      { "text": "Expense", "points": 27 },
+      { "text": "Nosey/Pesky Relatives", "points": 24 },
+      { "text": "Traffic/Traveling", "points": 20 },
+      { "text": "Crowds", "points": 13 },
+      { "text": "Holiday Food", "points": 10 }
+    ]
   },
   {
-    text: "Name Something A Teenage Boy Might Ask His Dad For",
-    answers: [
-      { text: "Car", points: 61 },
-      { text: "Money", points: 30 },
-      { text: "Advice", points: 2 },
-      { text: "Bike", points: 2 },
-    ],
+    "text": "Other Than “Christmas”, Name A Word That’s In Almost Every Christmas Song.",
+    "answers": [
+      { "text": "Merry", "points": 39 },
+      { "text": "Santa", "points": 22 },
+      { "text": "Snow", "points": 17 },
+      { "text": "Bells", "points": 9 },
+      { "text": "Holiday", "points": 6 }
+    ]
   },
   {
-    text: "Name Something That Gets Rolled Out",
-    answers: [
-      { text: "Red Carpet", points: 40 },
-      { text: "Dough", points: 35 },
-      { text: "Yoga Mat", points: 10 },
-      { text: "Sleeping Bag", points: 5 },
-    ],
+    "text": "Where Do You Hear Christmas Songs Throughout December?",
+    "answers": [
+      { "text": "Store", "points": 51 },
+      { "text": "Radio", "points": 31 },
+      { "text": "Place Of Worship", "points": 8 },
+      { "text": "TV", "points": 6 },
+      { "text": "Home", "points": 3 }
+    ]
   },
   {
-    text: "Which North Pole Resident Is Most Likely To Become Jealous Of Santa’s Power?",
-    answers: [
-      { text: "Elf", points: 45 },
-      { text: "Jack Frost", points: 31 },
-      { text: "Rudolph", points: 14 },
-      { text: "Mrs. Claus", points: 8 },
-    ],
+    "text": "Name Something Your House Is Full Of After Christmas.",
+    "answers": [
+      { "text": "Presents", "points": 34 },
+      { "text": "Wrapping Paper", "points": 31 },
+      { "text": "Food", "points": 15 },
+      { "text": "Pine Needles", "points": 6 },
+      { "text": "Boxes", "points": 5 },
+      { "text": "People", "points": 4 }
+    ]
   },
   {
-    text: "Where Do You Like To Go Barefoot?",
-    answers: [
-      { text: "Beach", points: 43 },
-      { text: "Park", points: 30 },
-      { text: "Shower", points: 16 },
-      { text: "Bed", points: 8 },
-    ],
+    "text": "Name A Reason You May Not Be Able To Get Home For The Holidays.",
+    "answers": [
+      { "text": "Sick", "points": 17 },
+      { "text": "Work", "points": 14 },
+      { "text": "Broke", "points": 12 },
+      { "text": "Far Away", "points": 4 },
+      { "text": "Car Problems", "points": 3 },
+      { "text": "Too Much Homework", "points": 2 }
+    ]
   },
   {
-    text: "Name Something You Try To Prevent From Getting Flat",
-    answers: [
-      { text: "Tire", points: 40 },
-      { text: "Hair", points: 33 },
-      { text: "Soda", points: 20 },
-      { text: "Beer", points: 5 },
-    ],
+    "text": "Name Something People Associate With “A Christmas Carol” By Charles Dickens.",
+    "answers": [
+      { "text": "Christmas", "points": 24 },
+      { "text": "Tiny Tim", "points": 19 },
+      { "text": "Scrooge", "points": 18 },
+      { "text": "Bob Cratchit", "points": 11 },
+      { "text": "Christmas Tree", "points": 9 },
+      { "text": "Ghosts", "points": 8 },
+      { "text": "Chains", "points": 6 }
+    ]
   },
   {
-    text: "Whose Phone Number Might A Child Know By Heart?",
-    answers: [
-      { text: "Emergency Department", points: 49 },
-      { text: "Home Phone", points: 37 },
-      { text: "Grandparents", points: 7 },
-      { text: "Best Friend", points: 3 },
-    ],
+    "text": "Name A Christmas Story That A Parent Might Read To Their Child.",
+    "answers": [
+      { "text": "Night Before Christmas", "points": 64 },
+      { "text": "Rudolph The Red Nose", "points": 9 },
+      { "text": "Grinch Stole Xmas", "points": 7 },
+      { "text": "A Christmas Carol", "points": 6 },
+      { "text": "Bible", "points": 4 },
+      { "text": "Frosty The Snow Man", "points": 3 },
+      { "text": "A Christmas Carol", "points": 2 }
+    ]
   },
   {
-    text: "Name A Reason Why Workers Might Go On Strike",
-    answers: [
-      { text: "Better Pay", points: 69 },
-      { text: "Want Benefits", points: 8 },
-      { text: "No Contract", points: 6 },
-      { text: "Better Hours", points: 3 },
-    ],
-  },
-  {
-    text: "Name Something People Put On Their Christmas Tree",
-    answers: [
-      { text: "Ornaments", points: 60 },
-      { text: "Lights", points: 25 },
-      { text: "Star", points: 10 },
-      { text: "Tinsel", points: 5 },
-    ],
-  },
-  {
-    text: "What Do You Do When You Can't Sleep?",
-    answers: [
-      { text: "Watch TV", points: 40 },
-      { text: "Read", points: 30 },
-      { text: "Count Sheep", points: 20 },
-      { text: "Have A Snack", points: 10 },
-    ],
-  },
-  {
-    text: "Name Something That Melts When It Gets Hot",
-    answers: [
-      { text: "Ice", points: 50 },
-      { text: "Candle", points: 30 },
-      { text: "Chocolate", points: 15 },
-      { text: "Cheese", points: 5 },
-    ],
-  },
+    "text": "Name Something Kids Say They’d Do If They Were An Adult, But That Adults Rarely Do.",
+    "answers": [
+      { "text": "Stay Up Late", "points": 34 },
+      { "text": "Party", "points": 20 },
+      { "text": "Become Rich", "points": 13 },
+      { "text": "Sleep In", "points": 10 },
+      { "text": "No House Rules", "points": 8 },
+      { "text": "Eat Junk Food", "points": 6 },
+      { "text": "Travel", "points": 5 }
+    ]
+  }
 ];
 
 function GameController() {
