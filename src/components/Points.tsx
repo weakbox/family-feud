@@ -8,7 +8,10 @@ interface PointsProps {
 function Points({totalPoints}: PointsProps) {
   return (
     <div className={styles.wrapper}>
-      <div>TeamName</div>
+      <input 
+      type="text" 
+      maxLength={16}
+      placeholder="Team Name"/>
       <CountUp
         className={styles.points}
         duration={1}

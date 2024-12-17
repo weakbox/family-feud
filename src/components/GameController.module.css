@@ -1,11 +1,6 @@
 .wrapper {
   width: 100vw;
   padding: 8rem;
-  background-image: url("blob.svg");
-  background-size: contain;
-  background-position: center;
-  background-origin: border-box;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +20,7 @@
   gap: 1rem;
   justify-items: center;
   width: fit-content;
-  background-color: var(--pri-text-color-dark);
+  background-color: var(--ter-background-color);
   padding: 1rem;
   border-radius: var(--border-radius);
 }
@@ -44,6 +39,9 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  background-color: var(--ter-background-color);
+  padding: 1rem;
+  border-radius: var(--border-radius);
 
   .button {
     font: inherit;

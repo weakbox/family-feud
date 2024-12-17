@@ -27,3 +27,12 @@
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
+
+input {
+  font-size: 30px;
+  border: none;
+  background: none;
+  color: var(--pri-text-color);
+  font-family: inherit;
+  text-align: center;
+}
